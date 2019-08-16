@@ -1,0 +1,75 @@
+<div class="card mt-5 container col-md-5">
+    <Button class="btn btn-danger" (click)="doGoogleLogin()">GOOGLE</Button>
+
+  <div class="card-body">
+    <div id="img">
+
+    </div>
+   <form #userForm="ngForm" (ngSubmit)="addUser(userForm)">
+    <input type="hidden" name="$key" #$key=ngModel [(ngModel)]="userService.selectUser.$key">
+      <div class="form-group" id="displayName">
+        <input  type="text" class="form-control" placeholder="displayName" name="displayName" #name="ngModel"
+        [(ngModel)]="userService.selectUser.displayName" >
+      </div>
+      <div class="form-group">
+          <input type="text" class="form-control" placeholder="email" name="email" #name="ngModel"
+          [(ngModel)]="userService.selectUser.email" >
+      </div>
+      <div class="form-group">
+          <input type="text" class="form-control" placeholder="photoURL" name="photoURL" #name="ngModel"
+          [(ngModel)]="userService.selectUser.photoURL" >
+      </div>
+      <div class="form-group">
+          <input  type="text" class="form-control" placeholder="providerId" name="providerId" #name="ngModel"
+          [(ngModel)]="userService.selectUser.providerId" >
+      </div>
+      <div class="form-group">
+          <input  type="text" class="form-control" placeholder="uid" name="uid" #name="ngModel"
+          [(ngModel)]="userService.selectUser.uid" >
+      </div>
+      <div class="form-group">
+          <input type="text" class="form-control" placeholder="nickName" name="nickName" #name="ngModel"
+          [(ngModel)]="userService.selectUser.nickName" >
+      </div>
+      <div class="form-group">
+          <input type="text" class="form-control" placeholder="idPlay" name="idPlay" #name="ngModel"
+          [(ngModel)]="userService.selectUser.idPlay" >
+      </div>
+      <div class="form-group">
+          <button class="btn btn-primary" type="submit">
+            <i class="fas fa-plus-circle"></i> Add A User
+          </button><br>
+          <button class="btn btn-secondary" type="reset" (click)="resetForm(userForm)">
+            <i class="fas fa-sync-alt"></i> Reset
+          </button>
+        </div>
+   </form>
+  </div>
+</div>
+<div class="card mt-5 container col-md-5">
+    <div class="card-body">
+      <h6 class="text-center">List of Users</h6>
+      <table class="table table-sm table-hover">
+        <tbody>
+          <tr *ngFor="let user of userList">
+            <td>{{user.displayName}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.photoURL}}</td>
+            <td>{{user.providerId}}</td>
+            <td>{{user.uid}}</td>
+            <td>{{user.nickName}}</td>
+            <td>{{user.idPlay}}</td>
+            <td>
+              <a class="btn btn-secondary text-white" (click)="editUser(user)">
+                <i class="fas fa-edit"></i>
+              </a>
+              <a class="btn btn-danger text-white" (click)="deleteUser(user.$key)">
+                <i class="fas fa-trash-alt"></i>
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>

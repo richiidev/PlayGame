@@ -1,0 +1,121 @@
+.todo{
+  background-color: #373737;
+}
+
+.todo1{
+  background-color: #373737;
+}
+.contenedor{
+  background-color:#373737;
+}
+
+.item {
+
+  background-color: #00165e;
+  width: 50%;
+  height: 110px;
+  border: 1px solid white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  -webkit-box-shadow: 10px 10px 41px 8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 41px 8px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 41px 8px rgba(0,0,0,0.75);
+}
+.cajadepedido{
+  overflow:auto;
+  height: 300px;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 30px 40px 10px 60px;
+  background-color: #535151;
+  -webkit-box-shadow: 10px 10px 41px 8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 41px 8px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 41px 8px rgba(0,0,0,0.75);
+  margin-bottom: 20px;
+}
+
+.cajadetag{
+  overflow:auto;
+  height: 300px;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 30px 40px 10px 60px;
+  background-color: #535151;
+  -webkit-box-shadow: 10px 10px 41px 8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 41px 8px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 41px 8px rgba(0,0,0,0.75);
+  margin-bottom: 20px;
+}
+
+
+.epc {
+  color: blue;
+  size:50%;
+  color:white;
+  }
+
+  .epc1{
+    size:10%;
+  }
+
+.navegador{
+  text-align: center;
+  background-color: #535151;
+  color: white;
+  width: 100%;
+}
+.hola{
+  background-color: green;
+}
+.cajapedidotext{
+  margin-top: 200px;
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 30px 40px 10px 60px;
+  width: 50%;
+  border-radius: 6px;
+}
+
+.foto{
+
+  width: 60%;
+  height: 60%;
+  align-content: center;
+  margin-left: 20px;
+  margin-top: 20px;
+
+}
+.imagen{
+  background-color: #535151;
+  float: left;
+  height: 200px;
+  border-radius: 6px;
+  -webkit-box-shadow: 10px 10px 41px 8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 41px 8px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 41px 8px rgba(0,0,0,0.75);
+  }
+.datos{
+  color: white;
+  text-align: center;
+}
+
+.vacio{
+  background-color: #535151;
+  float:right;
+  height: 200px;
+  border-radius: 6px;
+  -webkit-box-shadow: 10px 10px 41px 8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 41px 8px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 41px 8px rgba(0,0,0,0.75);
+}
+.pedido {
+height: 400px;
+
+}
